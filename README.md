@@ -33,7 +33,8 @@ pdf-tools-landing-page/
 
 Screenshots: 
 <img width="1892" height="883" alt="image" src="https://github.com/user-attachments/assets/82e94c58-5614-4c99-be0f-e6a046312b52" />
-<img width="1892" height="883" alt="image" src="https://github.com/user-attachments/assets/c0a726f7-dbd6-45d1-99a5-74b56aeed815" />
+<img width="1894" height="540" alt="image" src="https://github.com/user-attachments/assets/e24c7a61-f46b-454f-9f45-baa2a9a31435" />
+
 
 
 
