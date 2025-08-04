@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- Replace with your logo image -->
+                <img src="logo.png">
+            </a>
+            <div class="BrandName">
+                <h1>ALLPDFTools</h1>
+            </div>
+            
+            
+            <!-- Desktop Navigation Links -->
+            <div class="desktop-nav">
+                <a href="#">Edit PDF</a>
+                <a href="#">PDF Tools</a>
+                <a href="#">Login</a>
+                <a href="#">Sign up</a>
+                <a href="#">
+                    <img src="https://media.istockphoto.com/id/2166382132/vector/hamburger-menu-icon-buttons-for-website-ui-navigation-mobile-app-presentation-vector-design.jpg?s=612x612&w=0&k=20&c=_XSsIL4RaHxbWACpjhxUtO29ZLS07DsO5RsGVlF9ofs=" width="30" >
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-button">
+                <button id="menu-btn" type="button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#">Merge PDF</a>
+            <a href="#">Split PDF</a>
+            <a href="#">Compress PDF</a>
+            <a href="#">Convert PDF</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="tools-section">
+            <div class="container">
+                <h1>Every tool you need to work with PDFs</h1>
+                <p>
+                    Merge, split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks. Get all your PDF tasks done in one place.
+                </p>
+
+                <div class="tools-grid">
+                    <!-- Tool Card 1: Merge -->
+                    <a href="#" class="tool-card">
+                        <div class="tool-icon">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgXrSMCm5CYNAd0K7jf2WT6hqnsVnp-xGVNg&s">
+                        </div>
+                        <h3>Merge PDF</h3>
+                        <p>Combine multiple PDFs in the order you want with the easiest PDF merger available.</p>
+                    </a>
+                    <!-- Tool Card 2: Split -->
+                    <a href="#" class="tool-card">
+                        <div class="tool-icon">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpbrAiCQqt3dAITPGf5Yl7wNNQlcUw47BiP5jTETJMY22OD9O4UV-8kVStDGwTi-IyrA&usqp=CAU">
+                        </div>
+                        <h3>Split PDF</h3>
+                        <p>Separate one page or a whole set for easy conversion into independent PDF files.</p>
+                    </a>
+                    <!-- Tool Card 3: Compress -->
+                    <a href="#" class="tool-card">
+                        <div class="tool-icon">
+                        <img src="data:image/png;base64,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">
+                        </div>
+                        <h3>Compress PDF</h3>
+                        <p>Reduce file size while optimizing for maximal PDF quality.</p>
+                    </a>
+                    <!-- Tool Card 4: PDF to Word -->
+                    <a href="#" class="tool-card">
+                        <div class="tool-icon">
+                           <img src="data:image/jpeg;base64,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">
+                        </div>
+                        <h3>PDF to Word</h3>
+                        <p>Easily convert your PDF files into editable DOC and DOCX documents.</p>
+                    </a>
+                    <!-- Tool Card 5: Edit PDF -->
+                    <a href="#" class="tool-card">
+                        <div class="tool-icon">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrCJu2JGIz-GsGnzvjhkSftDZi0YarPTUmRQ&s">
+                        </div>
+                        <h3>Edit PDF</h3>
+                        <p>Add text, images, shapes or freehand annotations to a PDF document.</p>
+                    </a>
+                    <!-- Tool Card 6: Sign PDF -->
+                    <a href="#" class="tool-card">
+                        <div class="tool-icon">
+                            <img src="data:image/png;base64,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">
+                        </div>
+                        <h3>Sign PDF</h3>
+                        <p>Sign a document yourself or send a signature request to others.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; ALLPDFTools. All rights reserved.</p>
+            <!-- Social Media Icons -->
+            <div class="social-links">
+                <a href="#">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                </a>
+                <a href="#">
+                <!-- Instagram Icon SVG -->
+                    <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919A48.347 48.347 0 0112 2.163zm0 3.837c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162S15.403 6 12 6zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm4.448-10.342c-.777 0-1.409-.633-1.409-1.41s.632-1.409 1.409-1.409c.777 0 1.409.632 1.409 1.409s-.632 1.41-1.409 1.41z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <!-- Add this right after the social-links div -->
+            <div class="app-store-buttons">
+                <a href="#" class="app-store-button">
+                    <!-- App Store Icon -->
+                    <img src="https://substackcdn.com/image/fetch/$s_!G1lk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg" alt="Download on the App Store">
+                    <div class="button-text">
+                        <span>Download on the</span>
+                        <strong>App Store</strong>
+                    </div>
+                </a>
+                <a href="#" class="app-store-button">
+                    <!-- Google Play Icon -->
+                    <img src="https://yt3.googleusercontent.com/PJh5BeCRze4_08Qp8zOtb2bV6JGLiqmmc9QIRTVeTlrVmC2828C7gw5KIOU8uk70jN__SSY5Ug=s900-c-k-c0x00ffffff-no-rj" alt="Play">
+                    <div class="button-text">
+                        <span>GET IT ON</span>
+                        <strong>Google Play</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>

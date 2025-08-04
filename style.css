@@ -1,0 +1,336 @@
+/* General Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb; /* bg-gray-50 */
+    color: #1f2937; /* text-gray-800 */
+    margin: 0;
+    background-image: url('https://img.freepik.com/free-vector/abstract-bright-gradient-background-minimal-style_1017-51545.jpg?semt=ais_hybrid&w=740'); /* 🖼️ Paste your image URL here */
+    background-size: cover; /* This makes the image cover the whole page */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This stops the image from repeating */
+    background-attachment: fixed; /* This makes the background stay in place when you scroll */
+}
+
+/* Container for centering content */
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem; /* px-6 */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+header nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem; /* py-4 */
+    padding-bottom: 1rem; /* py-4 */
+    
+}
+/* Add this new rule to your style.css file */
+
+.BrandName h1 {
+    color: #3498db;          /* Example: A nice blue color */
+    font-size: 2.5rem;       /* Example: Adjust the size */
+    font-weight: bold;       /* Make it bold */
+    font-style: inherit;
+    text-transform: uppercase; /* Make all letters uppercase */
+    letter-spacing: 2px;     /* Add some space between letters */
+    margin: 0;               /* Remove any default margin */
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    
+}
+
+.desktop-nav {
+    display: none; /* hidden by default */
+}
+
+.desktop-nav a {
+    color: #4b5563; /* text-gray-600 */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.desktop-nav a:hover {
+    color: #4f46e5; /* hover:text-indigo-600 */
+}
+
+.mobile-menu-button button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4b5563; /* text-gray-600 */
+}
+
+.mobile-menu-button button:hover {
+    color: #4f46e5; /* hover:text-indigo-600 */
+}
+
+.mobile-menu-button svg {
+    width: 1.5rem; /* w-6 */
+    height: 1.5rem; /* h-6 */
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 0.5rem 1rem; /* py-2 px-4 */
+    font-size: 0.875rem; /* text-sm */
+    text-decoration: none;
+    color: #1f2937;
+}
+
+.mobile-menu a:hover {
+    background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+/* Tools Section */
+.tools-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.tools-section .container {
+    text-align: center;
+}
+
+.tools-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.tools-section p {
+    font-size: 1.125rem;
+    color: #4b5563;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.tools-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr); /* Default to 1 column */
+}
+
+.tool-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none; /* Add this line */
+    color: inherit;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.tool-card .tool-icon {
+    color: #4f46e5;
+    margin-bottom: 1rem;
+}
+
+.tool-card .tool-icon svg {
+    width: 2rem;
+    height: 2rem;
+}
+.tool-card .tool-icon img {
+    width: 2rem;  /* 32px */
+    height: 2rem; /* 32px */
+}
+
+.tool-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+
+.tool-card p {
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #1f2937; /* bg-gray-800 */
+    color: #ffffff;
+}
+
+.footer-content {
+    padding-top: 2rem; /* py-8 */
+    padding-bottom: 2rem; /* py-8 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-size: 0.875rem; /* text-sm */
+    color: #9ca3af; /* text-gray-400 */
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    margin-top: 1rem; /* mt-4 */
+    gap: 1rem; /* space-x-4 */
+}
+
+.social-links a {
+    color: #9ca3af; /* text-gray-400 */
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+.social-links svg {
+    width: 1.5rem; /* w-6 */
+    height: 1.5rem; /* h-6 */
+}
+
+/* Responsive Media Queries */
+@media (min-width: 640px) {
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    }
+}
+
+/* Medium screens and up (tablets, desktops) */
+@media (min-width: 768px) {
+    .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem; /* space-x-6 */
+    }
+
+    .mobile-menu-button {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none !important; /* Ensure it's hidden on desktop */
+    }
+    
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social-links {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    }
+    .tools-section h1 {
+        font-size: 3rem;
+    }
+}
+/* App Store Buttons */
+.app-store-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons on mobile */
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.app-store-button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.app-store-button:hover {
+    background-color: #444;
+}
+
+.app-store-button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.app-store-button .button-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.app-store-button .button-text span {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.app-store-button .button-text strong {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Make buttons side-by-side on larger screens */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .app-store-buttons {
+        flex-direction: row; /* Side-by-side on desktop */
+        margin-top: 0;
+    }
+}
+.app-store-button img {
+    width: 1.5rem;  /* 24px */
+    height: 1.5rem; /* 24px */
+    margin-right: 0.75rem;
+}
